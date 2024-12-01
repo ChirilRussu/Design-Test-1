@@ -1,3 +1,5 @@
 - Added Probuilder
 - Changed camera sensitivity
-- Disabled mouse on editor play (Editor script)
+- Playmaker script on character so mouse gets hidden and locked on focus
+- Editor script to automatically click on game view window so mouse gets hidden / locked
+- 
