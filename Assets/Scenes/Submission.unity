@@ -2251,7 +2251,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &427209555
 GameObject:
@@ -3487,6 +3487,12 @@ ReflectionProbe:
   m_UseOcclusionCulling: 1
   m_Importance: 1
   m_CustomBakedTexture: {fileID: 0}
+--- !u!1 &543309687 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4416926081852918481, guid: 64dce48905ffd9b4293e595fa6941544,
+    type: 3}
+  m_PrefabInstance: {fileID: 1762682258}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &563791613 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 563791613, guid: 64dce48905ffd9b4293e595fa6941544,
@@ -4030,7 +4036,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 35.269, y: 0, z: 44.672}
 --- !u!4 &686546556 stripped
 Transform:
@@ -5112,7 +5118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerRoot: {fileID: 1762682262}
   GlobalPPFXVolume: {fileID: 427209556}
-  CameraMouseSensitivity: 20
+  CameraMouseSensitivity: 1
   CameraClickSFX: {fileID: 843756488}
   UsingCameraTool: 0
   PlayerInput: {fileID: 1810932056}
@@ -11972,7 +11978,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: -100.562, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13321,7 +13327,7 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: 0
-          fsmComponent: {fileID: 1958533184}
+          fsmComponent: {fileID: 0}
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams:
@@ -14007,7 +14013,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1641765650
 GameObject:
@@ -14213,12 +14219,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAACYn+uNyZKnpAIAAKgFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFtVNtu2kAQ/RW0z21kx7hA31pDSCslQaFVHuo8LPYYr1jvWnsJkIh/z+zaYMephGRzZs7MnLn4jTCha8iMVEvF8juZA/k+Iu6dfBl1xls40K0Ua/YKZ58nlpvSOVHv80gNk4iHjqZlBUax7IfYcuccIGgFK6SqFvkWEqmNRrigXAOalDSOLRB6G5FDSzi2z1f3HJ3wLQNhQHVe46tJHIzH04FzOL4KJpNZ6DlWZJxWNeSu9o4axS0pir2bQFWtR3DlbJnknOm2KGKOtRed0FpblIQOOaMo0pfjNJfAtqXBP9d98kNRaDBtbYoe50xhr5qo5KdsGlhRvWsqe6HcwkVuE/LukzUOr729ULK6PacNA5fClCzbPdJjRrXpNbgPzz/WbcWe8h3dcHgqQdzLpZJW5Gg0yjqq1XA974W6SEtKyHadX1PsALT155GG3UhPXvwh4aza+MaPG2DNpW/3zHFA4Wh+YcF+RXQbCVFXxF8Nf+i2v0ut4YYpbdDUJhSuuo20yrmShe+ZE2NNIpUAD7c11yAoN8cVhjHDCQ5svbQDyw11V9Mmb23nYxhQPNz5B8HAtJL7blgaftuqXkkmzBqoyspePF3K/R3o8sEazgR0ipzhHpuYSCGa7dP/oa2tKmjWoxk4GKtgTg31N4A14ZbkfSo21DOE5dwtpFfhgv9DFe737JpcUszLPUzupfDX8+H57BZha1n+cc/JZArhJoyjOMuiSTT99jXa5LPZdBJDFIXBJg6IvwMmsOeUr5qmtaPCDRKdFoE7f/6wjZaK1v7wckX3S/Zayd74mSjkOlMA4qGJcBELCpPgJyJf5AxlrsEYJvzukbeUcJntIE8vgVLf2MXBKJp2UVJSsxdpHJKSxH/OUuLgy1mtFLww2Lvk52AncnoHUEsDBBQAAAgIAACYn+tk99XObQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrSSuUWqYZKhqbFpcrKxubGFma5xUoqlpYW5aaqxsaFBkqmBUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAACYn+uNyZKnpAIAAKgFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAACYn+tk99XObQAAAHgAAAAJACQAAAAAAAAAAAAAAPECAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAqQMAAAAA
+    dataString: UEsDBBQAAAgIAACQn+uNyZKnpAIAAKgFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFtVNtu2kAQ/RW0z21kx7hA31pDSCslQaFVHuo8LPYYr1jvWnsJkIh/z+zaYMephGRzZs7MnLn4jTCha8iMVEvF8juZA/k+Iu6dfBl1xls40K0Ua/YKZ58nlpvSOVHv80gNk4iHjqZlBUax7IfYcuccIGgFK6SqFvkWEqmNRrigXAOalDSOLRB6G5FDSzi2z1f3HJ3wLQNhQHVe46tJHIzH04FzOL4KJpNZ6DlWZJxWNeSu9o4axS0pir2bQFWtR3DlbJnknOm2KGKOtRed0FpblIQOOaMo0pfjNJfAtqXBP9d98kNRaDBtbYoe50xhr5qo5KdsGlhRvWsqe6HcwkVuE/LukzUOr729ULK6PacNA5fClCzbPdJjRrXpNbgPzz/WbcWe8h3dcHgqQdzLpZJW5Gg0yjqq1XA974W6SEtKyHadX1PsALT155GG3UhPXvwh4aza+MaPG2DNpW/3zHFA4Wh+YcF+RXQbCVFXxF8Nf+i2v0ut4YYpbdDUJhSuuo20yrmShe+ZE2NNIpUAD7c11yAoN8cVhjHDCQ5svbQDyw11V9Mmb23nYxhQPNz5B8HAtJL7blgaftuqXkkmzBqoyspePF3K/R3o8sEazgR0ipzhHpuYSCGa7dP/oa2tKmjWoxk4GKtgTg31N4A14ZbkfSo21DOE5dwtpFfhgv9DFe737JpcUszLPUzupfDX8+H57BZha1n+cc/JZArhJoyjOMuiSTT99jXa5LPZdBJDFIXBJg6IvwMmsOeUr5qmtaPCDRKdFoE7f/6wjZaK1v7wckX3S/Zayd74mSjkOlMA4qGJcBELCpPgJyJf5AxlrsEYJvzukbeUcJntIE8vgVLf2MXBKJp2UVJSsxdpHJKSxH/OUuLgy1mtFLww2Lvk52AncnoHUEsDBBQAAAgIAACQn+tk99XObQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrSSuUWqYZKhqbFpcrKxubGFma5xUoqlpYW5aaqxsaFBkqmBUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAACQn+uNyZKnpAIAAKgFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAACQn+tk99XObQAAAHgAAAAJACQAAAAAAAAAAAAAAPECAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAqQMAAAAA
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
     cacheStartup: 0
-  showNavGraphs: 1
+  showNavGraphs: 0
   showUnwalkableNodes: 1
   debugMode: 0
   debugFloor: 0
@@ -14470,7 +14476,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1762682258}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 543309687}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e087ecce43ebbff45a1b360637807d93, type: 3}
@@ -14682,12 +14688,150 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1762682258}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 543309687}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1810932061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543309687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    dataVersion: 2
+    usedInTemplate: {fileID: 0}
+    name: FSM
+    startState: State 1
+    states:
+    - name: State 1
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 100
+        y: 100
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    events: []
+    globalTransitions: []
+    variables:
+      floatVariables: []
+      intVariables: []
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+      arrayVariables: []
+      enumVariables: []
+      categories:
+      - 
+      variableCategoryIDs: 
+    description: 
+    docUrl: 
+    showStateLabel: 0
+    maxLoopCount: 0
+    watermark: 
+    password: 
+    locked: 0
+    manualUpdate: 0
+    outVariableIndices: 
+    keepDelayedEventsOnStateExit: 0
+    preprocessed: 0
+    ExposedEvents: []
+    OutputEvents: []
+    RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
+    EnableDebugFlow: 0
+    EnableBreakpoints: 1
+    editorFlags: 225
+    activeStateName: 
+    mouseEvents: 0
+    handleLevelLoaded: 0
+    handleTriggerEnter2D: 0
+    handleTriggerExit2D: 0
+    handleTriggerStay2D: 0
+    handleCollisionEnter2D: 0
+    handleCollisionExit2D: 0
+    handleCollisionStay2D: 0
+    handleTriggerEnter: 0
+    handleTriggerExit: 0
+    handleTriggerStay: 0
+    handleCollisionEnter: 0
+    handleCollisionExit: 0
+    handleCollisionStay: 0
+    handleParticleCollision: 0
+    handleControllerColliderHit: 0
+    handleJointBreak: 0
+    handleJointBreak2D: 0
+    handleOnGUI: 0
+    handleFixedUpdate: 0
+    handleLateUpdate: 0
+    handleApplicationEvents: 0
+    handleUiEvents: 0
+    handleLegacyNetworking: 0
+    handleAnimatorMove: 0
+    handleAnimatorIK: 0
+  fsmTemplate: {fileID: 0}
+  eventHandlerComponentsAdded: 0
 --- !u!1 &1864067380
 GameObject:
   m_ObjectHideFlags: 0
@@ -14740,7 +14884,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1879108031
 GameObject:
