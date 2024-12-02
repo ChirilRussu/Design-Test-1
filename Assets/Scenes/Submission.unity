@@ -14735,7 +14735,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 010101
-        actionIsOpen: 000001
+        actionIsOpen: 000000
         actionStartIndex: 00000000040000000c000000
         actionHashCodes: 074b1504422d1405394b9d03
         unityObjectParams: []
@@ -14924,6 +14924,18 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &1810932062 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544,
+    type: 3}
+  m_PrefabInstance: {fileID: 1762682258}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543309687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26e54e5a728a9234ab24fcf1460ed8a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1864067380
 GameObject:
   m_ObjectHideFlags: 0
@@ -17547,13 +17559,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.DebugLog
         - HutongGames.PlayMaker.Actions.TranslatePosition
+        - HutongGames.PlayMaker.Actions.CallMethod
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0001
-        actionStartIndex: 0000000003000000
-        actionHashCodes: 9c59e501f6e5be03
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 000001
+        actionStartIndex: 00000000030000000b000000
+        actionHashCodes: 9c59e501f6e5be03ca51e900
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -17578,8 +17592,69 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: Interacted!
-        fsmObjectParams: []
-        fsmVarParams: []
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: ChangeSpeed
+        fsmObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: StarterAssets.ThirdPersonController
+          value: {fileID: 1810932062}
+        fsmVarParams:
+        - variableName: 
+          objectType: UnityEngine.Object
+          useVariable: 0
+          type: 0
+          floatValue: 1
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        - variableName: 
+          objectType: 
+          useVariable: 0
+          type: -1
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams:
@@ -17615,12 +17690,13 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 0000000000000000000101
-        arrayParamSizes: 
-        arrayParamTypes: []
+        byteData: 00000000000000000001010000
+        arrayParamSizes: 01000000
+        arrayParamTypes:
+        - HutongGames.PlayMaker.FsmVar
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 070000001200000001000000140000001c0000000f0000000f0000000f000000070000000100000001000000
+        paramDataType: 070000001200000001000000140000001c0000000f0000000f0000000f00000007000000010000000100000018000000120000000c00000027000000270000000100000001000000
         paramName:
         - logLevel
         - text
@@ -17633,8 +17709,15 @@ MonoBehaviour:
         - space
         - perSecond
         - everyFrame
-        paramDataPos: 000000000000000004000000000000000000000000000000010000000200000005000000090000000a000000
-        paramByteDataSize: 0400000000000000010000000000000000000000000000000000000000000000040000000100000001000000
+        - behaviour
+        - methodName
+        - parameters
+        - 
+        - storeResult
+        - everyFrame
+        - manualUI
+        paramDataPos: 000000000000000004000000000000000000000000000000010000000200000005000000090000000a00000000000000010000000000000000000000010000000b0000000c000000
+        paramByteDataSize: 040000000000000001000000000000000000000000000000000000000000000004000000010000000100000000000000000000000000000000000000000000000100000001000000
     events:
     - name: StartInteract
       isSystemEvent: 0
@@ -17650,36 +17733,12 @@ MonoBehaviour:
       linkTarget: 0
       colorIndex: 0
     variables:
-      floatVariables:
-      - useVariable: 1
-        name: PlayerX
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: 0
-      - useVariable: 1
-        name: Player Z
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: 0
+      floatVariables: []
       intVariables: []
       boolVariables: []
       stringVariables: []
-      vector2Variables:
-      - useVariable: 1
-        name: PlayerVector2
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: {x: 0, y: 0}
-      vector3Variables:
-      - useVariable: 1
-        name: Vector
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: {x: 0, y: 0, z: 0}
+      vector2Variables: []
+      vector3Variables: []
       colorVariables: []
       rectVariables: []
       quaternionVariables: []
@@ -17691,7 +17750,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000
+      variableCategoryIDs: 
     description: 
     docUrl: 
     showStateLabel: 0

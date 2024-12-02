@@ -2,4 +2,6 @@
 - Changed camera sensitivity
 - Playmaker script on character so mouse gets hidden and locked on focus
 - Editor script to automatically click on game view window so mouse gets hidden / locked
-- 
+- Block pushing
+	Tranlate position on the block based on player vector
+	Reduce player speed when interacting with the block (new ChangeSpeed method on ThirdPersonController)
