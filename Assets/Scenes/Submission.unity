@@ -17929,15 +17929,15 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: FSM
-    startState: NotInteracting
+    startState: Idle
     states:
     - name: NotInteracting
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 62
-        y: 114
+        x: 371
+        y: 102.99219
         width: 115
         height: 16
       isBreakpoint: 0
@@ -17946,13 +17946,15 @@ MonoBehaviour:
       transitions: []
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.SetIntValue
         - HutongGames.PlayMaker.Actions.CallMethod
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: ca51e900
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0000
+        actionStartIndex: 0000000003000000
+        actionHashCodes: 603dd905ca51e900
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -18029,7 +18031,19 @@ MonoBehaviour:
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams: []
-        fsmIntParams: []
+        fsmIntParams:
+        - useVariable: 1
+          name: InteractingWIth
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmBoolParams: []
         fsmVector2Params: []
         fsmVector3Params: []
@@ -18037,14 +18051,17 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 0000
+        byteData: 000000
         arrayParamSizes: 01000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmVar
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 18000000120000000c00000027000000270000000100000001000000
+        paramDataType: 10000000100000000100000018000000120000000c00000027000000270000000100000001000000
         paramName:
+        - intVariable
+        - intValue
+        - everyFrame
         - behaviour
         - methodName
         - parameters
@@ -18052,16 +18069,16 @@ MonoBehaviour:
         - storeResult
         - everyFrame
         - manualUI
-        paramDataPos: 00000000000000000000000000000000010000000000000001000000
-        paramByteDataSize: 00000000000000000000000000000000000000000100000001000000
+        paramDataPos: 00000000010000000000000000000000000000000000000000000000010000000100000002000000
+        paramByteDataSize: 00000000000000000100000000000000000000000000000000000000000000000100000001000000
     - name: Interacting
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 283
-        y: 111
-        width: 106
+        x: 376
+        y: 186
+        width: 100
         height: 16
       isBreakpoint: 0
       isSequence: 0
@@ -18069,19 +18086,21 @@ MonoBehaviour:
       transitions: []
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.SetIntValue
         - HutongGames.PlayMaker.Actions.DebugLog
         - HutongGames.PlayMaker.Actions.TranslatePosition
         - HutongGames.PlayMaker.Actions.CallMethod
-        - HutongGames.PlayMaker.Actions.GetKeyDown
+        - HutongGames.PlayMaker.Actions.SetIntValue
         customNames:
         - 
         - 
         - 
         - 
-        actionEnabled: 01010101
-        actionIsOpen: 00000001
-        actionStartIndex: 00000000030000000b00000012000000
-        actionHashCodes: 9c59e501f6e5be03ca51e900c7b4ad04
+        - 
+        actionEnabled: 0101010101
+        actionIsOpen: 0000000001
+        actionStartIndex: 0000000003000000060000000e00000015000000
+        actionHashCodes: 603dd9059c59e501f6e5be03ca51e900603dd905
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -18190,14 +18209,32 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        fsmIntParams: []
-        fsmBoolParams:
+        fsmIntParams:
         - useVariable: 1
-          name: 
+          name: InteractingWIth
           tooltip: 
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 1
+          name: InteractingWIth
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        fsmBoolParams: []
         fsmVector2Params: []
         fsmVector3Params:
         - useVariable: 1
@@ -18209,16 +18246,18 @@ MonoBehaviour:
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
-        stringParams:
-        - StopInteract
-        byteData: 0000000000000000000101000015000000
+        stringParams: []
+        byteData: 000000000000000000000101000000
         arrayParamSizes: 01000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmVar
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 070000001200000001000000140000001c0000000f0000000f0000000f00000007000000010000000100000018000000120000000c00000027000000270000000100000001000000070000001700000011000000
+        paramDataType: 100000001000000001000000070000001200000001000000140000001c0000000f0000000f0000000f00000007000000010000000100000018000000120000000c00000027000000270000000100000001000000100000001000000001000000
         paramName:
+        - intVariable
+        - intValue
+        - everyFrame
         - logLevel
         - text
         - sendToUnityLog
@@ -18237,11 +18276,156 @@ MonoBehaviour:
         - storeResult
         - everyFrame
         - manualUI
-        - key
-        - sendEvent
-        - storeResult
-        paramDataPos: 000000000000000004000000000000000000000000000000010000000200000005000000090000000a00000000000000010000000000000000000000010000000b0000000c0000000d0000000000000000000000
-        paramByteDataSize: 040000000000000001000000000000000000000000000000000000000000000004000000010000000100000000000000000000000000000000000000000000000100000001000000040000000000000000000000
+        - intVariable
+        - intValue
+        - everyFrame
+        paramDataPos: 0000000001000000000000000100000000000000050000000000000000000000000000000100000002000000060000000a0000000b00000000000000010000000000000000000000010000000c0000000d00000002000000030000000e000000
+        paramByteDataSize: 000000000000000001000000040000000000000001000000000000000000000000000000000000000000000004000000010000000100000000000000000000000000000000000000000000000100000001000000000000000000000001000000
+    - name: Int Compare
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 205
+        y: 131
+        width: 106
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: GrabBox
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Interacting
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: LetGoBox
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: NotInteracting
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.IntCompare
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 09faa102
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams:
+        - useVariable: 1
+          name: InteractingWIth
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - GrabBox
+        - 
+        - LetGoBox
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 100000001000000017000000170000001700000001000000
+        paramName:
+        - integer1
+        - integer2
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        paramDataPos: 000000000100000000000000010000000200000000000000
+        paramByteDataSize: 000000000000000000000000000000000000000001000000
+    - name: Idle
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 61
+        y: 132.95312
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
     events:
     - name: StartInteract
       isSystemEvent: 0
@@ -18249,16 +18433,13 @@ MonoBehaviour:
     - name: StopInteract
       isSystemEvent: 0
       isGlobal: 1
+    - name: GrabBox
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: LetGoBox
+      isSystemEvent: 0
+      isGlobal: 0
     globalTransitions:
-    - fsmEvent:
-        name: StartInteract
-        isSystemEvent: 0
-        isGlobal: 1
-      toState: Interacting
-      linkStyle: 0
-      linkConstraint: 0
-      linkTarget: 0
-      colorIndex: 0
     - fsmEvent:
         name: StopInteract
         isSystemEvent: 0
@@ -18268,17 +18449,26 @@ MonoBehaviour:
       linkConstraint: 0
       linkTarget: 0
       colorIndex: 0
+    - fsmEvent:
+        name: StartInteract
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: Int Compare
+      linkStyle: 0
+      linkConstraint: 0
+      linkTarget: 0
+      colorIndex: 0
     variables:
       floatVariables: []
-      intVariables: []
-      boolVariables: []
-      stringVariables:
+      intVariables:
       - useVariable: 1
-        name: BeingInteracted
+        name: InteractingWIth
         tooltip: 
         showInInspector: 0
         networkSync: 0
-        value: 
+        value: 0
+      boolVariables: []
+      stringVariables: []
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
