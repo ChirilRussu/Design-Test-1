@@ -1,12 +1,18 @@
-- Added Probuilder
 - Changed camera sensitivity
 - Playmaker script on character so mouse gets hidden and locked on focus
-- Editor script to automatically click on game view window so mouse gets hidden / locked
+- Editor script to automatically click on game view window so above happens automatically
 - Added Block pushing
-	Tranlate position on the block based on player vector
-	Reduce player speed when interacting with the block (new ChangeSpeed method on ThirdPersonController)
-- Added binary logic to the push block - grabbing / letting go of it with the same key
-- Level interactable
-- Drawbridge
-- Pressure Plate
-- Removed skeeker and added patrol. Seekre is only meant to be used with 1 destination at a time so it was spasming out, constantly changing where it's trying to go.
+	- Tranlate position on the block based on player vector
+	- Reduce player speed when interacting with the block (new ChangeSpeed method on ThirdPersonController)
+	- Player moving too far away from the block automaticaly ends interaction
+	- Removed sprinting, now running by default
+	- Added binary logic to the push block - grabbing / letting go of it with the same key
+- New interactables
+	- Lever
+	- Pressure Plate
+	- Drawbridge
+- AI adjustment
+	- Removed skeeker and added patrol.
+- Added 3d key
+- Added Probuilder
+	- Updated playable area
