@@ -575,28 +575,6 @@
                 },
                 {
                     "name": "",
-                    "id": "8843ce03-dbf0-4f2c-9aba-48756b1f3777",
-                    "path": "<Keyboard>/shift",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "Sprint",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "722d2084-c875-4ed6-a73c-301de982dd75",
-                    "path": "<Gamepad>/buttonWest",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "Sprint",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "19047158-1458-4e78-9af4-a44ec09b1dba",
                     "path": "<Gamepad>/rightShoulder",
                     "interactions": "",
