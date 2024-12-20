@@ -9,3 +9,4 @@
 - Level interactable
 - Drawbridge
 - Pressure Plate
+- Removed skeeker and added patrol. Seekre is only meant to be used with 1 destination at a time so it was spasming out, constantly changing where it's trying to go.
